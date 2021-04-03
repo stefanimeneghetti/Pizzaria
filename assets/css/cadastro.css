@@ -1,0 +1,34 @@
+.form-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    color: #343434;
+}
+
+.form-radio-group__item label {
+    padding-left: 7px;
+}
+
+.form__btn {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    .half-md {
+        width: 48%;
+    }
+  
+    .promotion {
+        align-self: flex-start;
+        margin-top: 65px;
+    }
+
+    .form {
+        justify-content: space-between;
+    }
+
+    .form__btn {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
