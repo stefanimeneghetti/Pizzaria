@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site da Pizzaria">
+    <meta name="keywords" content="Pizza, Pedido online">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+    <link rel="stylesheet" href="assets/css/cliente.css">
+
+    <title>Pizzaria</title>
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="index.html">Pizzaria</a>
+        <nav class="navbar">
+            <button class="navbar__nav-button">&#9776;</button>
+            <ul class="navbar__nav-list">
+                <li class="nav-list__item"><a href="index.html">Home</a></li>
+                <li class="nav-list__item"><a href="quemsomos.html">Sobre</a></li>
+                <li class="nav-list__item"><a href="precos.html">Preços</a></li>
+                <li class="nav-list__item"><a href="pedido.html">Pedido</a></li>
+                <li class="nav-list__item"><a href="contato.html">Contato</a></li>
+                <li class="nav-list__item"><a href="cliente.html">Cliente</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <h2 class="title">Acesse sua conta</h2>
+                <form class="form">
+
+                    <div class="form-group">
+                        <label for="email" class="form-group__label">Email</label>
+                        <input type="email" name="email" class="form-group__input"
+                            placeholder="Informe seu email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-group__label">Senha</label>
+                        <input type="password" id="password" name="password" placeholder="Insira sua senha"
+                            class="form-group__input">
+                    </div>
+                    <button class="btn--red form__btn" type="submit">Entrar</button>
+
+                    <a class="form__link" href="cadastro.html">Criar uma conta</a>
+
+                </form>
+        </main>
+
+        <aside class="promotion">
+            <h2 class="promotion__title">Promoção da Semana</h2>
+            <img class="promotion__icon" src="assets/images/pizza.png" alt="Icone de uma fatia de pizza">
+            <p class="promotion__description">Ao comprar uma pizza grande ganhe um refrigerante</p>
+
+            <a href="pedido.html" class="btn--red promotion__btn">Faça seu pedido</a>
+        </aside>
+    </div>
+
+    <footer>
+        <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

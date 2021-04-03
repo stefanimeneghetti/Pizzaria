@@ -1,0 +1,36 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.form__btn {
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+
+.form__link {
+    text-decoration: none;
+    color: #343434;
+}
+
+@media (min-width: 768px) {
+    body {
+        height: calc(100vh - 80px);
+        min-height: fit-content;
+    }
+    
+    .container {
+        height: 100%;
+    }
+
+    .form {
+        width: 65%;
+        margin-bottom: 0;
+    }
+}
