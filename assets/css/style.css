@@ -23,6 +23,7 @@ header {
     height: 80px;
     padding: 0 5%;
 
+    box-shadow: 0 3px 3px #e1e1e1;
     position: fixed;
     z-index: 2;
 }
@@ -182,6 +183,18 @@ footer a {
     font-size: 1.8rem;
 }
 
+.subtitle {
+    color: #FF5030;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+ol {
+    list-style: lower-roman;
+    list-style-position: inside;
+}
+
 .btn--red {
     display: flex;
     flex-wrap: wrap;
@@ -214,7 +227,7 @@ footer a {
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 200;
 }
 
@@ -239,6 +252,11 @@ footer a {
 
     aside {
         width: 30%;
+    }
+
+    .promotion {
+        align-self: flex-start;
+        margin-top: 65px;
     }
 }
 
