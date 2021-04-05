@@ -1,0 +1,40 @@
+.form__subtitle {
+    color: #343434;
+    font-size: 1.2rem;
+    font-weight: 300;
+    align-self: flex-start;
+    margin: 20px 0;
+}
+
+.form__btn {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.form-group-checkbox label {
+    display: inline;
+}
+
+
+.form-group-checkbox input {
+    display: inline;
+    margin-right: 10px;
+}
+
+.form-group-checkbox {
+    margin-bottom: 15px;
+}
+
+.options {
+    width: 100%;
+}
+
+.form{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group-radio input {
+    margin-right: 10px;
+}
