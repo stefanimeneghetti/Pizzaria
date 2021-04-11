@@ -91,7 +91,11 @@
                         id="notes"></textarea>
                 </div>
 
-                <button class="form__btn btn--red" type="submit">Cadastrar</button>
+                <div class="errors">
+                    <p class="errors-title">Não foi possível realizar o cadastro!</p>
+                </div>
+
+                <button class="form__btn btn--red" id="register-btn" type="submit">Cadastrar</button>
             </form>
         </main>
 
@@ -131,6 +135,7 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/validate.js"></script>
 </body>
 
 </html>

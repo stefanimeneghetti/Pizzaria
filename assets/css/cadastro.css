@@ -13,6 +13,32 @@
     margin-left: 0;
 }
 
+.errors {
+    border: #FF5030 solid 1px;
+    background-color: #FFCAC1;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+
+    display: none;
+
+    font-size: 1rem;
+    color: #151515;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.errors ul {
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+.errors-title {
+    color: #FF2800;
+    font-weight: 300;
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     .half-md {
         width: 48%;
