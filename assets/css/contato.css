@@ -76,6 +76,56 @@ main {
     -moz-appearance: none;
 }
 
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-items {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.location-items details {
+    margin-bottom: 25px;
+    border-top: solid 1px #FFC383;
+    border-bottom: solid 1px #FFC383;
+}
+
+.location-items summary{
+    outline: none;
+}
+
+summary::-webkit-details-marker {
+    color: #FFC383;
+}
+
+
+.location-items summary {
+    margin: 10px auto;
+}
+
+
+.location-items details:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .location {
+        width: 80%;
+        align-self: center;
+    }
+
+    .location-items {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
 @media (min-width: 768px) {
     .form {
         flex-direction: row;
