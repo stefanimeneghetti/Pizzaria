@@ -38,3 +38,53 @@
 .form-group-radio input {
     margin-right: 10px;
 }
+
+.checkbox-image {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.form-group-checkbox {
+    background-color: #ffffff;
+    box-shadow: 0 5px 5px #cacaca;
+    padding: 8px;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.checkbox__input{
+    width: 65%;
+}
+
+.flavors-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkbox__input {
+    display: flex;
+    align-items: center;
+}
+
+.form-group-checkbox:hover .label__flavor, .ingredients {
+    display: none;
+}
+
+.form-group-checkbox:hover .ingredients {
+    display: block;
+}
+
+@media (max-width:1000px) {
+    .form-group-checkbox {
+        width: 100%;
+    }
+}

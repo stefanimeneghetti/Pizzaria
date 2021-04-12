@@ -43,60 +43,66 @@
                     <label class="form-group__label" for="size">Selecione o tamanho da pizza</label>
                     <select name="size" id="size" class="form-group__input form-group__select">
                         <option value="">Selecione</option>
-                        <option value="b">Mini</option>
+                        <option value="pp">Mini</option>
                         <option value="p">Pequena</option>
                         <option value="m">Média</option>
                         <option value="g">Grande</option>
                         <option value="gg">Gigante</option>
                     </select>
                 </div>
+                <p>Você selecionou <strong id="selectedFlavors">0</strong> de <strong id="limitFlavors">0</strong> sabores</p>
                 <div class="options">
                     <h3 class="form__subtitle">Selecione os sabores</h3>
-                    <div class="form-group form-group-checkbox">
-                        <input type="checkbox" name="flavors[]" value="">
-                        <label class="form-group__label"><strong>Calabresa</strong> - Molho, calabresa e mussarela</label>
-                    </div>
 
-                    <div class="form-group form-group-checkbox">
-                        <input type="checkbox" name="flavors[]" value="">
-                        <label class="form-group__label"><strong>Alho e Óleo</strong> - Molho, alho, óleo e mussarela</label>
-                    </div>
+                    <div class="flavors-options">
+                        <div class="form-group form-group-checkbox">
+                            <div class="checkbox__input">
+                                <input type="checkbox" name="flavors[]" value="" onchange="updateSelected()">
+                                <label class="form-group__label">
+                                    <strong class="label__flavor">Calabresa</strong>
+                                    <div class="ingredients"><p>Molho, calabresa e mussarela</p></div>
+                                </label>
+                            </div>
+                            <img class="checkbox-image" src="assets/images/pizza-bacon.jpg" alt="Imagem de uma pizza do sabor informado">
+                        </div>
 
-                    <div class="form-group form-group-checkbox">
-                        <input type="checkbox" name="flavors[]" value="">
-                        <label class="form-group__label"><strong>Atum</strong> - Molho, Atum, cxebola e mussarela</label>
-                    </div>
+                        <div class="form-group form-group-checkbox">
+                            <div class="checkbox__input">
+                                <input type="checkbox" name="flavors[]" value="" onchange="updateSelected()">
+                                <label class="form-group__label">
+                                    <strong class="label__flavor">Calabresa</strong>
+                                    <div class="ingredients"><p>Molho, calabresa e mussarela</p></div>
+                                </label>
+                            </div>
+                            <img class="checkbox-image" src="assets/images/pizza-bacon.jpg" alt="Imagem de uma pizza do sabor informado">
+                        </div>
 
-                    <div class="form-group form-group-checkbox">
-                        <input type="checkbox" name="flavors[]" value="">
-                        <label class="form-group__label" ><strong>Marguerita</strong> - Molho, mussarela, manjericão, tomate</label>
+                        <div class="form-group form-group-checkbox">
+                            <div class="checkbox__input">
+                                <input type="checkbox" name="flavors[]" value="" onchange="updateSelected()">
+                                <label class="form-group__label">
+                                    <strong class="label__flavor">Calabresa</strong>
+                                    <div class="ingredients"><p>Molho, calabresa e mussarela</p></div>
+                                </label>
+                            </div>
+                            <img class="checkbox-image" src="assets/images/pizza-bacon.jpg" alt="Imagem de uma pizza do sabor informado">
+                        </div>
+
+                        <div class="form-group form-group-checkbox">
+                            <div class="checkbox__input">
+                                <input type="checkbox" name="flavors[]" value="" onchange="updateSelected()">
+                                <label class="form-group__label">
+                                    <strong class="label__flavor">Calabresa</strong>
+                                    <div class="ingredients"><p>Molho, calabresa e mussarela</p></div>
+                                </label>
+                            </div>
+                            <img class="checkbox-image" src="assets/images/pizza-bacon.jpg" alt="Imagem de uma pizza do sabor informado">
+                        </div>
                     </div>
 
                     
-                    <div class="form-group form-group-checkbox">
-                        <input type="checkbox" name="flavors[]" value="">
-                        <label class="form-group__label"><strong>Mussarela</strong> - Molho, mussarela e orégano</label>
-                    </div>
-                    
-                    <div class="form-group form-group-checkbox">
-                        <input type="checkbox" name="flavors[]" value="">
-                        <label class="form-group__label"><strong>Strogonoff</strong> - Molho, strogonoff e batata palha</label>
-                    </div>
-                    
-                    <div class="form-group form-group-checkbox">
-                        <input type="checkbox" name="flavors[]" value="">
-                        <label class="form-group__label"><strong>Frango</strong> - Molho, frango, catupiry e mussarela</label>
-                    </div>
-                    
-                    <div class="form-group form-group-checkbox">
-                        <input type="checkbox" name="flavors[]" value="">
-                        <label class="form-group__label"><strong>Brócolis</strong> - Molho, brócolis, catupiry e mussarela</label>
-                    </div>
 
-                    <div class="form-group form-group-checkbox">
-                        <input type="checkbox" name="flavors[]" value="">
-                        <label class="form-group__label"><strong>Vegetariana</strong> - Molho, rúcula e mussarela</label>
-                    </div>
+                    
                     
                     <div class="form-group form-group-radio">
                         <h3 class="form__subtitle">Selecione o tipo de borda</h3>
@@ -161,6 +167,7 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/pedido.js"></script>
 </body>
 
 </html>
