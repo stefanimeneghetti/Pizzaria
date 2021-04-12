@@ -7,3 +7,9 @@ navButton.addEventListener("click", function(e) {
 });
 
 
+const toggleChat = document.querySelector('.chat__header');
+
+toggleChat.addEventListener("click", function (e) {
+    const chat = document.querySelector(".chat");
+    chat.classList.toggle('chat--open');
+});
